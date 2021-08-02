@@ -39,7 +39,7 @@ def main():
     root.title("Journal")
     root.resizable(0,0)
     
-    root.wm_iconbitmap(bitmap = "logo.ico")
+    root.wm_iconbitmap(bitmap = "assets/logo.ico")
     
     T1 = tk.Text()
     T1.pack(side = tk.LEFT)
