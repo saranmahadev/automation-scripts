@@ -7,8 +7,11 @@ def get_quote():
     quote = resp.json()[0]["q"]
     author = resp.json()[0]["a"]
     return quote,author
+
 def send_quote():
     """ Sends Quote to the Desktop"""
     quote = get_quote()   
     notification.notify(title = quote[1] , message = quote[0], app_name = "Quote of the Day" )
-send_quote()
+
+if __name__ == '__main__':
+    send_quote()

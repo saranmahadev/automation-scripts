@@ -1,7 +1,5 @@
-from os import getcwd
 import subprocess
 import os
-
 subprocess.run(["git","init"])
 with open(os.getcwd() + "\README.md","w+") as file:
     file.write("### Title"+"\n"+"---")    
